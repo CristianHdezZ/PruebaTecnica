@@ -1,0 +1,4 @@
+tipoDocumento;numeroDocumento;nombrePagador;celular;email;referenciaUna;referenciaDos;descripcion;monto;fechaVencimiento;url
+CC;82954306;Oscar Gomez;+573001679059;ogomez@gmail.com;Ref1;;;2000;2023-09-15;https://www.google.com
+CE;461346;Claudia López;+573431092832;clopez@gmail.com;Ref2;;;1000000;2023-09-15;https://www.google.com
+NIT;952456029;Natalia Perez;+573790765120;nlopez@gmail.com;Ref3;;;2999;2024-04-20;https://www.google.com

@@ -1,0 +1,3 @@
+co\cobre\lib\qa\model\RecaudoTemplate.class
+co\cobre\lib\qa\util\UpdateFileCSV.class
+acceptance\test\GeneralRunner.class

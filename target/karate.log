@@ -1,0 +1,205 @@
+18:16:45.853 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:16:49.865 [main] INFO  com.intuit.karate - Cargando configuraciones null 
+18:16:50.605 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:16:50.636 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'searchNumeroDocumento' with new value: '952456029'
+18:16:50.645 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'newValueFechaVencimiento' with new value: '2024-04-20'
+18:16:50.650 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'record' with new value: readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)
+18:16:50.684 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia López', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:16:50.807 [main] ERROR com.intuit.karate - classpath:acceptance/test/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+>>>>
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:acceptance/test/prueba-tecnica.feature:24
+18:16:50.982 [main] INFO  com.intuit.karate - Cargando configuraciones null 
+18:16:51.096 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:16:51.112 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'searchNumeroDocumento' with new value: '952456029'
+18:16:51.112 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'newValueFechaVencimiento' with new value: '2024-04-20'
+18:16:51.112 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'record' with new value: readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)
+18:16:51.148 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia López', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:16:51.180 [main] ERROR com.intuit.karate - classpath:acceptance/test/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+>>>>
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:acceptance/test/prueba-tecnica.feature:24
+18:16:51.227 [main] INFO  com.intuit.karate - Cargando configuraciones null 
+18:16:51.259 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:16:51.274 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'searchNumeroDocumento' with new value: '952456029'
+18:16:51.274 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'newValueFechaVencimiento' with new value: '2024-04-20'
+18:16:51.274 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'record' with new value: readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)
+18:16:51.306 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia López', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:16:51.322 [main] ERROR com.intuit.karate - classpath:acceptance/test/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+>>>>
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:acceptance/test/prueba-tecnica.feature:24
+18:16:51.400 [main] INFO  com.intuit.karate - Cargando configuraciones null 
+18:16:51.447 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:16:51.463 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'searchNumeroDocumento' with new value: '952456029'
+18:16:51.463 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'newValueFechaVencimiento' with new value: '2024-04-20'
+18:16:51.463 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'record' with new value: readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)
+18:16:51.494 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia López', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:16:51.530 [main] ERROR com.intuit.karate - classpath:acceptance/test/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+>>>>
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:acceptance/test/prueba-tecnica.feature:24
+18:16:59.149 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:acceptance/test/prueba-tecnica.feature
+18:35:08.029 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:35:08.061 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1718753708045
+18:35:10.990 [main] INFO  com.intuit.karate - Cargando configuraciones null 
+18:35:11.303 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:35:11.319 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'searchNumeroDocumento' with new value: '952456029'
+18:35:11.319 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'newValueFechaVencimiento' with new value: '2024-04-20'
+18:35:11.319 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'record' with new value: readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)
+18:35:11.341 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia López', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:35:11.366 [main] ERROR com.intuit.karate - classpath:acceptance/test/features/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+>>>>
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24
+18:35:11.382 [main] INFO  com.intuit.karate - Cargando configuraciones null 
+18:35:11.413 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:35:11.413 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'searchNumeroDocumento' with new value: '952456029'
+18:35:11.413 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'newValueFechaVencimiento' with new value: '2024-04-20'
+18:35:11.413 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'record' with new value: readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)
+18:35:11.429 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia López', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:35:11.439 [main] ERROR com.intuit.karate - classpath:acceptance/test/features/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+>>>>
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24
+18:35:11.460 [main] INFO  com.intuit.karate - Cargando configuraciones null 
+18:35:11.476 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:35:11.476 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'searchNumeroDocumento' with new value: '952456029'
+18:35:11.476 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'newValueFechaVencimiento' with new value: '2024-04-20'
+18:35:11.476 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'record' with new value: readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)
+18:35:11.492 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia López', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:35:11.507 [main] ERROR com.intuit.karate - classpath:acceptance/test/features/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+>>>>
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24
+18:35:11.523 [main] INFO  com.intuit.karate - Cargando configuraciones null 
+18:35:11.554 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:35:11.554 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'searchNumeroDocumento' with new value: '952456029'
+18:35:11.554 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'newValueFechaVencimiento' with new value: '2024-04-20'
+18:35:11.554 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'record' with new value: readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)
+18:35:11.570 [main] INFO  com.intuit.karate - [print] [
+  "RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia López', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}",
+  "RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}"
+]
+ 
+18:35:11.585 [main] ERROR com.intuit.karate - classpath:acceptance/test/features/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+>>>>
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24
+18:35:14.814 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:acceptance/test/features/prueba-tecnica.feature

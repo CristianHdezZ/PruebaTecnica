@@ -1,0 +1,6715 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: acceptance/test/features/prueba-tecnica.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Acceptance test report</td>
+      <td>18 jun. 2024, 18:35</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">acceptance/test/features/prueba-tecnica.feature</td>
+          <td      class="passed"    >52</td>
+          <td      class="failed"    >4</td>
+          <td     class="skipped"   >152</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">208</td>
+
+          <td >0</td>
+          <td  class="failed"    >4</td>
+          <td class="total">4</td>
+
+          <td class="duration" data-value="403007900">0.403</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">acceptance/test/features/prueba-tecnica.feature</span>
+
+
+</div>
+
+        <div class="description indention">sample karate test script</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.266</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = {count: 3, interval: 3000}</span>
+
+  <span class="lead-duration duration">0.136</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>18:35:10.990 Cargando configuraciones null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def readerCSV = Java.type('co.cobre.lib.qa.util.UpdateFileCSV')</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def filePathCaracteresEspeciales = 'src/test/java/acceptance/test/recaudoTemplateCaracteresEspeciales.csv'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def searchNumeroDocumento = '558432'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newValueFechaVencimiento = '2024-04-20'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Modificar el campo en el CSV</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def record = readerCSV.cargarDatosRecaudos(filePathCaracteresEspeciales, searchNumeroDocumento, newValueFechaVencimiento)</span>
+
+  <span class="lead-duration duration">0.042</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print record</span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>18:35:11.319 [print] [
+  &quot;RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def filePathDatosCorrectos = 'src/test/java/acceptance/test/recaudoTemplateDatosCorrectos.csv'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def searchNumeroDocumento = '952456029'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newValueFechaVencimiento = '2024-04-20'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Modificar el campo en el CSV</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def record = readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print record</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>18:35:11.341 [print] [
+  &quot;RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia L&oacute;pez', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># La clase S3Util se encuentra en un gestor de librer&iacute;as externo al proyecto</div>
+          <div class="comment indention"># Imaginemos que esta clase contiene la configuraci&oacute;n y conexi&oacute;n de un cliente AWS, adem&aacute;s los m&eacute;todos para subir archivos a buckets S3</div>
+          <div class="comment indention"># Tambi&eacute;n contiene un m&eacute;todo para verificar si un archivo se encuentra dentro de un folder</div>
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')</span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>js</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>18:35:11.366 classpath:acceptance/test/features/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def S3ManagerInstance = new S3Manager()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def SQSManager = karate.callSingle('../acceptance/test/instances-sqs.js')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def waitTime = function(seconds) { java.lang.Thread.sleep(seconds * 1000) }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># La clase FileUtils se encuentra en un gestor de librer&iacute;as externo al proyecto</div>
+          <div class="comment indention"># Imaginemos que esta clase contiene m&eacute;todos para tomar un archivo, renombrarlo y copiarlo en otra ruta</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def FileUtils = Java.type('co.cobre.lib.qa.util.FileUtils')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def bucketName = 'test-automation-qa'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def folderRecaudoFiles = 'files-to-cash-in'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def noveltyUuid = java.util.UUID.randomUUID().toString()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El uuid de la novedad es: &quot; + noveltyUuid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fileExtension = &quot;.csv&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fullFileName = noveltyUuid+fileExtension</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def renameFile = FileUtils.renameFile(currentFilePath, currentFileName, newPathNewFile, noveltyUuid, fileExtension)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El resultado de renombrar el archivo es: &quot; + renameFile</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match renameFile == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El bucket es: &quot; + bucketName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El folder  es: &quot; + folderRecaudoFiles</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">S3ManagerInstance.uploadFileToBucket(bucketName, folderRecaudoFiles, fullFileName, newPathNewFile)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderRecaudoFiles, fullFileName)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;La existencia del archivo es: &quot; + fileExist</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match fileExist == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def variableMapToReplaceInQueueMessageBody =</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>{
+&quot;fileName&quot;: '#(fullFileName)',
+&quot;workplacebankCode&quot;: '',
+&quot;bucketName&quot;: '#(bucketName)'
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4096115763.html">@obtener_informaci&oacute;n_de_las_novedades</a>
+       <a href="report-tag_941644884.html">@datos_correctamente_con_usuarios</a>
+       <a href="report-tag_233058432.html">@regression</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Dado que se carga un archivo de recaudo con datos correctamente con usuarios que recibir&aacute;n un link de pago, al procesarse el archivo se persisten en BD los recaudo creados exitosamente</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">set variableMapToReplaceInQueueMessageBody.workplacebankCode = 'TEST01'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">SQSManager.sendMessageToQueue('queueEvent.json', 'testing-recaudo-qa.fifo', variableMapToReplaceInQueueMessageBody, 'src/test/java/acceptance/test/')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(8)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+          <div class="comment indention"># Uso de API REST para obtener informaci&oacute;n de las novedades</div>
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">path ''+noveltyUuid+''</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">header X-WorkplaceBankCode = 'TEST01'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 200 &amp;&amp; response.cashInNovelty.status == status &amp;&amp; response.cashInNoveltyDetailsCounters.total == total</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalAmount = response.cashInNovelty.totalAmount</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def status = response.cashInNovelty.status</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalNovelties = response.cashInNoveltyDetailsCounters.total</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def validationError = response.cashInNoveltyDetailsCounters.validationError</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def created = response.cashInNoveltyDetailsCounters.created#    * match totalAmount == '&lt;&gt;'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNovelty.status == 'VALIDATED'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNovelty.totalNovelties == '3'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNovelty.validationError == '0'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNovelty.created == '3'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.045</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+
+<div class="brief failed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = {count: 3, interval: 3000}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>18:35:11.382 Cargando configuraciones null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def readerCSV = Java.type('co.cobre.lib.qa.util.UpdateFileCSV')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def filePathCaracteresEspeciales = 'src/test/java/acceptance/test/recaudoTemplateCaracteresEspeciales.csv'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def searchNumeroDocumento = '558432'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newValueFechaVencimiento = '2024-04-20'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Modificar el campo en el CSV</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def record = readerCSV.cargarDatosRecaudos(filePathCaracteresEspeciales, searchNumeroDocumento, newValueFechaVencimiento)</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print record</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>18:35:11.413 [print] [
+  &quot;RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def filePathDatosCorrectos = 'src/test/java/acceptance/test/recaudoTemplateDatosCorrectos.csv'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def searchNumeroDocumento = '952456029'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newValueFechaVencimiento = '2024-04-20'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Modificar el campo en el CSV</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def record = readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print record</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>18:35:11.429 [print] [
+  &quot;RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia L&oacute;pez', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># La clase S3Util se encuentra en un gestor de librer&iacute;as externo al proyecto</div>
+          <div class="comment indention"># Imaginemos que esta clase contiene la configuraci&oacute;n y conexi&oacute;n de un cliente AWS, adem&aacute;s los m&eacute;todos para subir archivos a buckets S3</div>
+          <div class="comment indention"># Tambi&eacute;n contiene un m&eacute;todo para verificar si un archivo se encuentra dentro de un folder</div>
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
+          <a>js</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>18:35:11.445 classpath:acceptance/test/features/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def S3ManagerInstance = new S3Manager()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def SQSManager = karate.callSingle('../acceptance/test/instances-sqs.js')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def waitTime = function(seconds) { java.lang.Thread.sleep(seconds * 1000) }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># La clase FileUtils se encuentra en un gestor de librer&iacute;as externo al proyecto</div>
+          <div class="comment indention"># Imaginemos que esta clase contiene m&eacute;todos para tomar un archivo, renombrarlo y copiarlo en otra ruta</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def FileUtils = Java.type('co.cobre.lib.qa.util.FileUtils')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def bucketName = 'test-automation-qa'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def folderRecaudoFiles = 'files-to-cash-in'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def noveltyUuid = java.util.UUID.randomUUID().toString()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El uuid de la novedad es: &quot; + noveltyUuid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fileExtension = &quot;.csv&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fullFileName = noveltyUuid+fileExtension</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def renameFile = FileUtils.renameFile(currentFilePath, currentFileName, newPathNewFile, noveltyUuid, fileExtension)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El resultado de renombrar el archivo es: &quot; + renameFile</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match renameFile == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El bucket es: &quot; + bucketName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El folder  es: &quot; + folderRecaudoFiles</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">S3ManagerInstance.uploadFileToBucket(bucketName, folderRecaudoFiles, fullFileName, newPathNewFile)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderRecaudoFiles, fullFileName)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;La existencia del archivo es: &quot; + fileExist</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match fileExist == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def variableMapToReplaceInQueueMessageBody =</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>{
+&quot;fileName&quot;: '#(fullFileName)',
+&quot;workplacebankCode&quot;: '',
+&quot;bucketName&quot;: '#(bucketName)'
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_941644884.html">@datos_correctamente_con_usuarios</a>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_1525114596.html">@obtener_informaci&oacute;n_de_las_novelty-details</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Dado que se carga un archivo de recaudo con datos correctamente con usuarios que recibir&aacute;n un link de pago, al procesarse el archivo se persisten en BD los recaudo creados exitosamente</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">set variableMapToReplaceInQueueMessageBody.workplacebankCode = 'TEST01'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">SQSManager.sendMessageToQueue('queueEvent.json', 'testing-recaudo-qa.fifo', variableMapToReplaceInQueueMessageBody, 'src/test/java/acceptance/test/')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(8)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+          <div class="comment indention"># Uso de API REST para obtener informaci&oacute;n de las novelty-details</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataWithExpectedInformation = karate.read(&quot;classpath:acceptance/test/&quot; + 'respuestaEsperadaDatosCorrectos.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def pageInt = parseInt('1')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def sizeInt = parseInt('3')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">path ''+noveltyUuid+''+'/novelty-details'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">header X-WorkplaceBankCode = 'TEST01'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">params {page: '0', size: '100'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 200 &amp;&amp; response.content != []</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def content = response.content</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNoveltyDetails.content contains deep dataWithExpectedInformation</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.042</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+
+<div class="brief failed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = {count: 3, interval: 3000}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>18:35:11.460 Cargando configuraciones null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def readerCSV = Java.type('co.cobre.lib.qa.util.UpdateFileCSV')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def filePathCaracteresEspeciales = 'src/test/java/acceptance/test/recaudoTemplateCaracteresEspeciales.csv'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def searchNumeroDocumento = '558432'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newValueFechaVencimiento = '2024-04-20'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Modificar el campo en el CSV</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def record = readerCSV.cargarDatosRecaudos(filePathCaracteresEspeciales, searchNumeroDocumento, newValueFechaVencimiento)</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print record</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>18:35:11.476 [print] [
+  &quot;RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def filePathDatosCorrectos = 'src/test/java/acceptance/test/recaudoTemplateDatosCorrectos.csv'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def searchNumeroDocumento = '952456029'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newValueFechaVencimiento = '2024-04-20'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Modificar el campo en el CSV</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def record = readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print record</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>18:35:11.492 [print] [
+  &quot;RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia L&oacute;pez', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># La clase S3Util se encuentra en un gestor de librer&iacute;as externo al proyecto</div>
+          <div class="comment indention"># Imaginemos que esta clase contiene la configuraci&oacute;n y conexi&oacute;n de un cliente AWS, adem&aacute;s los m&eacute;todos para subir archivos a buckets S3</div>
+          <div class="comment indention"># Tambi&eacute;n contiene un m&eacute;todo para verificar si un archivo se encuentra dentro de un folder</div>
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-26">
+          <a>js</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>18:35:11.507 classpath:acceptance/test/features/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def S3ManagerInstance = new S3Manager()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def SQSManager = karate.callSingle('../acceptance/test/instances-sqs.js')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def waitTime = function(seconds) { java.lang.Thread.sleep(seconds * 1000) }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># La clase FileUtils se encuentra en un gestor de librer&iacute;as externo al proyecto</div>
+          <div class="comment indention"># Imaginemos que esta clase contiene m&eacute;todos para tomar un archivo, renombrarlo y copiarlo en otra ruta</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def FileUtils = Java.type('co.cobre.lib.qa.util.FileUtils')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def bucketName = 'test-automation-qa'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def folderRecaudoFiles = 'files-to-cash-in'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def noveltyUuid = java.util.UUID.randomUUID().toString()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El uuid de la novedad es: &quot; + noveltyUuid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fileExtension = &quot;.csv&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fullFileName = noveltyUuid+fileExtension</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def renameFile = FileUtils.renameFile(currentFilePath, currentFileName, newPathNewFile, noveltyUuid, fileExtension)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El resultado de renombrar el archivo es: &quot; + renameFile</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match renameFile == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El bucket es: &quot; + bucketName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El folder  es: &quot; + folderRecaudoFiles</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">S3ManagerInstance.uploadFileToBucket(bucketName, folderRecaudoFiles, fullFileName, newPathNewFile)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderRecaudoFiles, fullFileName)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;La existencia del archivo es: &quot; + fileExist</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match fileExist == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def variableMapToReplaceInQueueMessageBody =</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>{
+&quot;fileName&quot;: '#(fullFileName)',
+&quot;workplacebankCode&quot;: '',
+&quot;bucketName&quot;: '#(bucketName)'
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_776216461.html">@datos_contienen_caracteres_especiales</a>
+       <a href="report-tag_4096115763.html">@obtener_informaci&oacute;n_de_las_novedades</a>
+       <a href="report-tag_233058432.html">@regression</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Dado que se carga un archivo de recaudo con datos que contienen caracteres especiales, al procesarse el archivo se verificar&aacute; la informaci&oacute;n y se persistir&aacute;n en BD con el detalle del error</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-29" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-30">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-30" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">set variableMapToReplaceInQueueMessageBody.workplacebankCode = 'TEST01'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">SQSManager.sendMessageToQueue('queueEvent.json', 'testing-recaudo-qa.fifo', variableMapToReplaceInQueueMessageBody, 'src/test/java/acceptance/test/')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(8)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+          <div class="comment indention"># Uso de API REST para obtener informaci&oacute;n de las novedades</div>
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">path ''+noveltyUuid+''</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">header X-WorkplaceBankCode = 'TEST01'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 200 &amp;&amp; response.cashInNovelty.status == status &amp;&amp; response.cashInNoveltyDetailsCounters.total == total</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalAmount = response.cashInNovelty.totalAmount</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def status = response.cashInNovelty.status</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def totalNovelties = response.cashInNoveltyDetailsCounters.total</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def validationError = response.cashInNoveltyDetailsCounters.validationError</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def created = response.cashInNoveltyDetailsCounters.created#    * match totalAmount == '&lt;&gt;'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNovelty.status == 'VALIDATED'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNovelty.totalNovelties == '2'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNovelty.validationError == '2'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNovelty.created == '0'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.048</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
+
+<div class="brief failed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = {count: 3, interval: 3000}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>18:35:11.523 Cargando configuraciones null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def readerCSV = Java.type('co.cobre.lib.qa.util.UpdateFileCSV')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def filePathCaracteresEspeciales = 'src/test/java/acceptance/test/recaudoTemplateCaracteresEspeciales.csv'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def searchNumeroDocumento = '558432'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newValueFechaVencimiento = '2024-04-20'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Modificar el campo en el CSV</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def record = readerCSV.cargarDatosRecaudos(filePathCaracteresEspeciales, searchNumeroDocumento, newValueFechaVencimiento)</span>
+
+  <span class="lead-duration duration">0.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print record</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>18:35:11.554 [print] [
+  &quot;RecaudoTemplate{tipoDocumento='CE', numeroDocumento='89308166', nombrePagador='', celular='+573504241615', email='correoprueba@gmail.com', referenciaUna='Ref8', referenciaDos='Ref27', descripcion='Pago deuda', monto='1157321', fechaVencimiento='2023-09-20', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='CC', numeroDocumento='558432', nombrePagador='RICARDO TORRES', celular='', email='rtorres@gmail.com', referenciaUna='Ref9', referenciaDos='Ref28', descripcion='', monto='75000', fechaVencimiento='2024-04-20', url='https://www.google.com'}&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def filePathDatosCorrectos = 'src/test/java/acceptance/test/recaudoTemplateDatosCorrectos.csv'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def searchNumeroDocumento = '952456029'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def newValueFechaVencimiento = '2024-04-20'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Modificar el campo en el CSV</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def record = readerCSV.cargarDatosRecaudos(filePathDatosCorrectos, searchNumeroDocumento, newValueFechaVencimiento)</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print record</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>18:35:11.570 [print] [
+  &quot;RecaudoTemplate{tipoDocumento='CC', numeroDocumento='82954306', nombrePagador='Oscar Gomez', celular='+573001679059', email='ogomez@gmail.com', referenciaUna='Ref1', referenciaDos='', descripcion='', monto='2000', fechaVencimiento='2023-09-15', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='CE', numeroDocumento='461346', nombrePagador='Claudia L&oacute;pez', celular='+573431092832', email='clopez@gmail.com', referenciaUna='Ref2', referenciaDos='', descripcion='', monto='1000000', fechaVencimiento='2023-09-15', url='https://www.google.com'}&quot;,
+  &quot;RecaudoTemplate{tipoDocumento='NIT', numeroDocumento='952456029', nombrePagador='Natalia Perez', celular='+573790765120', email='nlopez@gmail.com', referenciaUna='Ref3', referenciaDos='', descripcion='', monto='2999', fechaVencimiento='2024-04-20', url='https://www.google.com'}&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># La clase S3Util se encuentra en un gestor de librer&iacute;as externo al proyecto</div>
+          <div class="comment indention"># Imaginemos que esta clase contiene la configuraci&oacute;n y conexi&oacute;n de un cliente AWS, adem&aacute;s los m&eacute;todos para subir archivos a buckets S3</div>
+          <div class="comment indention"># Tambi&eacute;n contiene un m&eacute;todo para verificar si un archivo se encuentra dentro de un folder</div>
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-36">
+          <a>js</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>18:35:11.585 classpath:acceptance/test/features/prueba-tecnica.feature:24
+* def S3Manager = Java.type('co.cobre.lib.qa.aws.S3Util')
+js failed:
+&gt;&gt;&gt;&gt;
+01: Java.type('co.cobre.lib.qa.aws.S3Util')
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class co.cobre.lib.qa.aws.S3Util is not allowed or does not exist.
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:acceptance/test/features/prueba-tecnica.feature:24
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def S3ManagerInstance = new S3Manager()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def SQSManager = karate.callSingle('../acceptance/test/instances-sqs.js')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def waitTime = function(seconds) { java.lang.Thread.sleep(seconds * 1000) }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># La clase FileUtils se encuentra en un gestor de librer&iacute;as externo al proyecto</div>
+          <div class="comment indention"># Imaginemos que esta clase contiene m&eacute;todos para tomar un archivo, renombrarlo y copiarlo en otra ruta</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def FileUtils = Java.type('co.cobre.lib.qa.util.FileUtils')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def bucketName = 'test-automation-qa'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def folderRecaudoFiles = 'files-to-cash-in'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def noveltyUuid = java.util.UUID.randomUUID().toString()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El uuid de la novedad es: &quot; + noveltyUuid</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fileExtension = &quot;.csv&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fullFileName = noveltyUuid+fileExtension</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def renameFile = FileUtils.renameFile(currentFilePath, currentFileName, newPathNewFile, noveltyUuid, fileExtension)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El resultado de renombrar el archivo es: &quot; + renameFile</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match renameFile == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El bucket es: &quot; + bucketName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;El folder  es: &quot; + folderRecaudoFiles</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">S3ManagerInstance.uploadFileToBucket(bucketName, folderRecaudoFiles, fullFileName, newPathNewFile)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(3)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def fileExist = S3ManagerInstance.doesFileExist(bucketName, folderRecaudoFiles, fullFileName)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">print &quot;La existencia del archivo es: &quot; + fileExist</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match fileExist == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def variableMapToReplaceInQueueMessageBody =</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>{
+&quot;fileName&quot;: '#(fullFileName)',
+&quot;workplacebankCode&quot;: '',
+&quot;bucketName&quot;: '#(bucketName)'
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_776216461.html">@datos_contienen_caracteres_especiales</a>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_1525114596.html">@obtener_informaci&oacute;n_de_las_novelty-details</a>
+</div>
+
+
+  <span class="lead-duration duration">0.000</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-39">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Dado que se carga un archivo de recaudo con datos que contienen caracteres especiales, al procesarse el archivo se verificar&aacute; la informaci&oacute;n y se persistir&aacute;n en BD con el detalle del error</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-39" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-40">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-40" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">set variableMapToReplaceInQueueMessageBody.workplacebankCode = 'TEST01'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">SQSManager.sendMessageToQueue('queueEvent.json', 'testing-recaudo-qa.fifo', variableMapToReplaceInQueueMessageBody, 'src/test/java/acceptance/test/')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">waitTime(8)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># --------------------------------------------------------------- #</div>
+          <div class="comment indention"># Uso de API REST para obtener informaci&oacute;n de las novelty-details</div>
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataWithExpectedInformation = karate.read(&quot;classpath:acceptance/test/&quot; + 'respuestaEsperadaCaracteresEspeciales.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def pageInt = parseInt('1')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def sizeInt = parseInt('2')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">path ''+noveltyUuid+''+'/novelty-details'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">header X-WorkplaceBankCode = 'TEST01'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">params {page: '0', size: '100'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until responseStatus == 200 &amp;&amp; response.content != []</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">def content = response.content</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* skipped">
+  <span class="keyword indention">*</span>
+  <span class="name">match getNoveltyDetails.content contains deep dataWithExpectedInformation</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
