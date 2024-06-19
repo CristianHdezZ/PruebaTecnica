@@ -52,8 +52,8 @@ pipeline{
                                                         keepAll: true,
                                                         reportDir: "${WORKSPACE}//serenity_${timestamp}",
                                                         reportFiles: 'index.html',
-                                                        reportName: 'Evidencias Automatizacion WEB Screenplay',
-                                                        reportTitles: 'Proyecto Base WEB Screenplay'
+                                                        reportName: 'Evidencias Automatizacion API',
+                                                        reportTitles: 'Proyecto Automatizacion Karate'
                                                 ])
                                                 echo 'Reporte Html realizado con exito'
 
@@ -61,7 +61,7 @@ pipeline{
                                             catch(e)
                                             {
                                                 echo 'No se realizo el Backup de evidencias'
-                                                publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "${WORKSPACE}//target/serenity_${timestamp}", reportFiles: 'index.html', reportName: 'Evidencias Automatizacion WEB Screenplay', reportTitles: 'Proyecto base WEB Screenplay'])
+                                                publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "${WORKSPACE}//target/serenity_${timestamp}", reportFiles: 'index.html', reportName: 'Evidencias Automatizacion API', reportTitles: 'Proyecto Automatizacion Karate'])
                                                 echo 'Reporte Html realizado con exito'
                                                 currentBuild.result='SUCCESS'
                                             }
